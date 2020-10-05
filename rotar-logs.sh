@@ -2,6 +2,13 @@
 # Rotar el archivo de registro de trazas de navegacion de squid
 # en un directorio destinado para ello
 
+# Permisos de ejecucion
+# chmod a+rx /usr/local/sbin/rotar-logs.sh
+
+# Agregar a la lista de tareas en crontab
+# La tarea se realiza a las 11 y 59 pm de cada dia
+# 59 23 * * * /usr/local/sbin/rotar-logs.sh
+
 # ubicacion del directorio base de logs de squid
 LOGFILEDIR=/var/log/squid
 
